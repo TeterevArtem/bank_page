@@ -1,0 +1,108 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank__block{
+    width: 278px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px 40px 15px 40px;
+}
+
+.rate__list{
+    list-style: none;
+    margin: 11px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.bank__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bank__link{
+    color: #434343;
+    font-weight: 600;
+}
+.bank__link.active{
+    color: #009846;
+}
+.rate__star_full{
+    fill: #FECC00;
+}
+.text__review{
+    color: #8D8D8D;
+}
+.review__button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #F2F2F2;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: 13px auto 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bank__options{
+    margin-top: 75px;
+    margin-left: 60px;
+}
+.bank__item{
+    margin-top: 14px;
+}
+.content__title{
+    font-size: 32px;
+    max-width: 573px;
+    margin-bottom: 45px;
+}
+.content__header p{
+    max-width: 485px;
+    font-weight: 600;
+}
+
+.content__header:before{
+    content: '';
+    position: absolute;
+    right: 7%;
+    top: -1%;
+    width: 315px;
+    height: 226px;
+    background: url('images/hand_money.svg') center center no-repeat;
+}
+.content__section{
+    margin-left: 100px
+}
+.content__description{
+    margin-top: 115px;
+}
+.content__title_red{
+    color: #E31E24;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    max-width: none;
+}
+.desc p{
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 18px;
+}
+.content__brands{
+    max-width: 310px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.content__item{
+display: none;
+}
+.active{
+    display: block;
+}
