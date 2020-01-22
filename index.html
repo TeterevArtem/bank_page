@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bank page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="bank__options">
                     <ul class="bank__list">
-                        <li class="bank__item"><a href="one" class="bank__link active">О банке</a></li>
+                        <li class="bank__item active"><a href="one" class="bank__link">О банке</a></li>
                         <li class="bank__item"><a href="two" class="bank__link">Условия</a></li>
                         <li class="bank__item"><a href="three" class="bank__link">Контакты</a></li>
                         <li class="bank__item"><a href="four" class="bank__link">Все отзывы</a></li>
@@ -69,9 +69,9 @@
                 </div>
             </aside>
             <ul class="content__section">
-                <li class="content__item active">
+                <li class="content__item content__item_one active">
                     <div class="content__header">
-                        <h2 class="content__title">ТОВАРЫ В РАССРОЧКУ ОТ БТА БАНКА БЕЗ ПЕРЕПЛАТ И ПРОЦЕНТОВ</h2>
+                        <h2 class="content__title content__title_first">ТОВАРЫ В РАССРОЧКУ ОТ БТА БАНКА БЕЗ ПЕРЕПЛАТ И ПРОЦЕНТОВ</h2>
                         <p>Бытовая техника, телефоны, электроника, товары для дома и офиса В РАССРОЧКУ на сумму от 5 000 до 150 000 сом в интернет-маркетплейсе «Svetofor»</p>
                     </div>
                     <div class="content__description">
@@ -85,49 +85,59 @@
                         </div>
                     </div>
                 </li>
-                <li class="content__item">
-                    <h4 class="content__title">Необходимые документы для оформления рассрочки в Коммерческом банке Кыргызстан:</h4>
-                    <div class="content__block_first">
-                        <div class="content__block_left">
-                            <h6 class="content__title">Сумма, сом</h6>
-                            <div class="content__section">
-                                <p>до 100 000</p>
-                            </div>
-                            <div class="content__section">
-                                <p>свыше 100 000</p>
-                            </div>
+                <li class="content__item content__item_two">
+                    <h4 class="content__title content__title_second">Необходимые документы для оформления рассрочки в Коммерческом банке Кыргызстан:</h4>
+                    <section class="first__section">         
+                      <div class="section__content">
+                        <div class="content__block">
+                          <h6 class="content__title content__title_small">Сумма, сом</h6>
+                          <div class="content__data"> 
+                            <p>до 100 000</p>
+                          </div>
                         </div>
-                        <div class="content__block_right">
-                            <h6 class="content__title">Для всей категории клиентов</h6>
-                            <div class="content__section">
-                                <ol class="section__list">
-                                    <li class="section__item">Паспорт</li>
-                                    <li class="section__item">Документы подтверждающие доход*</li>
-                                </ol>
-                            </div>
-                            <div class="content__section">
-                                <ol class="section__list">
-                                    <li class="section__item">Паспорт заемщика, его супруги (-га), свидетельство о браке </li>
-                                    <li class="section__item">Справка о заработной плате за последние 3-6 месяцев со всеми необходимыми реквизитами</li>
-                                    <li class="section__item">Патент</li>
-                                    <li class="section__item">Cвидетельство ИП и другие справки, подтверждающие наличие у клиента собственного бизнеса</li>
-                                    <li class="section__item">Паспорт Поручителя, его супруги(-га), свидетельство о браке</li>
-                                </ol>
-                            </div>
+                        <div class="content__block content__block_right">
+                          <h6 class="content__title content__title_small">Для всей категории клиентов</h6>
+                          <div class="content__data content__data_right">
+                            <ol class="section__list">
+                              <li class="section__item">Паспорт</li>
+                              <li class="section__item">Документы подтверждающие доход*</li>
+                            </ol>
+                          </div>
                         </div>
-                    </div>
-                    <div class="content__block_second">
+                      </div>
+                    </section>
+                    <section class="second__section">                      
+                      <div class="content__block">
+                        <div class="content__data">
+                          <p>свыше 100 000</p>
+                        </div>
+                      </div>
+                      <div class="content__block content__block_right">
+                        <div class="content__data content__data_right">
+                          <ol class="section__list">
+                            <li class="section__item">Паспорт заемщика, его супруги (-га), свидетельство о браке </li>
+                            <li class="section__item">Справка о заработной плате за последние 3-6 месяцев со всеми необходимыми реквизитами</li>
+                            <li class="section__item">Патент</li>
+                            <li class="section__item">Cвидетельство ИП и другие справки, подтверждающие наличие у клиента собственного бизнеса</li>
+                            <li class="section__item">Паспорт Поручителя, его супруги(-га), свидетельство о браке</li>
+                        </ol>
+                        </div>
+                    </section>
+                    <section class="third__section">
+                      <div class="content__data content__data_right">
                         <p>*Справка о доходах за последние 3-6 месяцев/патент/свидетельство ИП/пенсионное удостоверение/другие документы *В зависимости от индивидуального случая и Вашей кредитной истории, банк может запрашивать дополнительные документы, такие как:</p>
                         <ul class="second__list">
                             <li class="second__item">- Свидетельство о браке</li>
                             <li class="second__item">- Свидетельство о рождении детей.</li>
                         </ul>
                         <p>***По всем интересующим Вас вопросам просим обращаться по следующему телефону: +996 615366</p>
-                    </div>
-                    <h4 class="content__title">Условия финансирования Коммерческого банка Кыргызстан:</h4>
-                    <div class="content__block_third">
-                        <h6 class="content__title">Требования к клиентам:</h6>
-                        <div class="content__section">
+                      </div>   
+                    </section>
+                    <section class="fouth_section">
+                      <h4 class="content__title content__title_fourth">Условия финансирования Коммерческого банка Кыргызстан:</h4>
+                      <div class="content__block_third">
+                        <h6 class="content__title content__title_small">Требования к клиентам:</h6>
+                        <div class="content__data content__data_right">
                             <ul class="third__list">
                                 <li class="third__item">Гражданство Кыргызской Республики</li>
                                 <li class="third__item">Возраст от 18 лет до 65 лет (до 21 года требуется поручительство одного родителя)</li>
@@ -135,16 +145,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="content__block_third">
-                        <h6 class="content__title">Изменилась комиссия:</h6>
-                        <div class="content__section">
-                            <ul class="third__list">
-                                <li class="third__item">Теперь при перечислении суммы на счет торгового предприятия (помимо комиссионного вознаграждения) отнимаем единовременную комиссию за выдачу кредита т.к. впредь клиент будет оплачивать комиссию за выдачу в кассе торгового предприятия.</li>
-                                <li class="third__item">Пример: 15 000 сом (должны перечислить) - 500 сом (комиссия за выдачу кредита) =14 500 сом.</li>
-
-                            </ul>
+                    </section>
+                    <section class="fiveth__section">
+                      <div class="content__block_third">
+                        <h6 class="content__title content__title_small">Изменилась комиссия:</h6>
+                        <div class="content__data content__data_right">
+                          <ul class="third__list">
+                              <li class="third__item">Теперь при перечислении суммы на счет торгового предприятия (помимо комиссионного вознаграждения) отнимаем единовременную комиссию за выдачу кредита т.к. впредь клиент будет оплачивать комиссию за выдачу в кассе торгового предприятия.</li>
+                              <li class="third__item">Пример: 15 000 сом (должны перечислить) - 500 сом (комиссия за выдачу кредита) =14 500 сом.</li>
+                          </ul>
                         </div>
-                    </div>
+                      </div>
+                    </section>             
                 </li>
             </ul>
         </div>
