@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>bank page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="popup__full_cover">
+      <div class="popup__comment">
+        <h6 class="popup__title">Оцените сервис обслуживания</h6><a class="popup__close" href="#"></a>
+        <form class="popup__form">
+          <textarea class="popup__textarea" placeholder="Напишите ваш комментарий здесь"></textarea>
+          <div class="form__bottom">
+            <div class="block__rate">
+              <h6 class="popup__title">Поставьте оценку банку</h6>
+              <div class="rating__block">
+                <input name="rating" value="5" id="rating__5" type="radio"/>
+                <label class="label__rating" for="rating__5" title="Отлично"></label>
+                <input name="rating" value="4" id="rating__4" type="radio"/>
+                <label class="label__rating" for="rating__4" title="Хорошо"></label>
+                <input name="rating" value="3" id="rating__3" type="radio"/>
+                <label class="label__rating" for="rating__3" title="Нормально"></label>
+                <input name="rating" value="2" id="rating__2" type="radio"/>
+                <label class="label__rating" for="rating__2" title="Не очень"></label>
+                <input name="rating" value="1" id="rating__1" type="radio"/>
+                <label class="label__rating" for="rating__1" title="Плохо">         </label>
+              </div>
+            </div>
+            <input class="popup__submit" type="submit"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <aside class="left__panel">
+          <div class="bank__block">
+            <div class="bank__logo"><img src="images/finca.png" alt="Finca Банк"/>
+            </div>
+            <div class="bank__rate">
+              <ul class="rate__list">
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_empty" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_empty" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="text__review assessment"><span>25 оценок</span></div>
+            <div class="text__review review"><span>133 отзыва</span></div>
+            <button class="review__button">Написать отзыв</button>
+          </div>
+          <div class="bank__options">
+            <ul class="bank__list">
+              <li class="bank__item active"><a class="bank__link" href="one">О банке</a></li>
+              <li class="bank__item"><a class="bank__link" href="two">Условия</a></li>
+              <li class="bank__item"><a class="bank__link" href="three">Контакты</a></li>
+              <li class="bank__item"><a class="bank__link" href="four">Все отзывы</a></li>
+            </ul>
+          </div>
+        </aside>
+        <main class="main__content">
+          <div class="content__header">           
+            <h3 class="content__title content__title_first">Товары в рассрочку без переплат и процентов</h3>
+            <h2 class="content__title content__title_red-bank">от ФИНКА Банка:</h2>
+            <p>Бытовая техника, телефоны, электроника, товары для дома и офиса В РАССРОЧКУ на сумму от 5 000 до 150 000 сом в интернет-маркетплейсе «Svetofor»</p>
+          </div>
+          <ul class="content__section">
+            <li class="content__item content__item_one active">
+              <div class="content__description">
+                <div class="content__description">
+                  <h6 class="content__title content__title_green">Покупайте любые товары в кредит! Неограниченный Shopping в Интернет-маркетплейсе Svetofor с потребительским кредитованием от ЗАО «ФИНКА Банк»</h6>
+                  <div class="desc">
+                    <p>Интернет-маркетплейс Svetofor предлагает всем покупателям не откладывать покупки в дальний ящик, если у Вас недостаточно средств для покупки, Вы можете купить в кредит. Получить кредит в Бишкеке и в Кыргызстане в целом становится все проще - выбирайте любые товары, предлагаемые Интернет-маркетплейсом на сумму от 10 000 до 250 000 сомов и оплачивайте товары в течение периода от 3 до 36 месяцев. Взять в кредит может каждый от 18 до 65 лет.</p>
+                  </div>
+                  <h6 class="content__title content__title_green">Кто может получить кредит в ФИНКА Банке?</h6>
+                  <ul class="bank_page__list">
+                    <li class="bank_page__items">Физическое лицо, работающее по найму, получающий ежемесячную заработную плату;</li>
+                  </ul>
+                  <h6 class="content__title content__title_green">Часто задаваемые вопросы по потребительскому кредиту от ЗАО «ФИНКА Банк</h6>
+                  <div class="offen__question">
+                    <ul class="question__list hidden">
+                      <li class="question__item">
+                        <h5 class="question__link">Как взять товар в кредит, если справку с работы не дают?</h5>
+                        <div class="question__content">
+                          <p>Справка - это обязательный документ, требуется за 6-12 месяцев, а для сотрудников организации по зарплатному проекту, обслуживающийся в нашем банке не требуется.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Если я живу в Бишкеке, а прописка в Нарыне (Таласе, в регионах), как можно взять товар в кредит?</h5>
+                        <div class="question__content">
+                          <p>Если Вы проживаете и работаете в Бишкеке, а прописка в Нарыне, то можете получить кредит, вне зависимости от прописки.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Как взять товар в кредит, если я живу в Оше?</h5>
+                        <div class="question__content">
+                          <p>Если вы живете в другом городе, то Вам необходимо получить кредит в вашем филиале нашего Банка</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Если у меня доходом является ежемесячное пенсионное пособие, могу ли получить кредит?</h5>
+                        <div class="question__content">
+                          <p>Необходимо предоставить подтверждающие документы, в случае недостаточности пенсионного пособия, потребуется включить дополнительно доходы членов семьи, проживающих совместно с вами (дети, супруга).</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Если у меня уже есть кредит, могу ли взять кредит у Вас?</h5>
+                        <div class="question__content">
+                          <p>Индивидуально рассмотрим каждую заявку, с учетом платежеспособности и кредитной истории.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Можно ли приобрести товар в кредит в других областях?</h5>
+                        <div class="question__content">
+                          <p>Филиалы банка расположены во всех областях и районах КР.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Можно ли приобрести несколько товаров в кредит?</h5>
+                        <div class="question__content">
+                          <p>Можно, если позволяют ваши доходы. Но сумма кредита не должен превышать 250 000сом.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">Как можно взять товар в кредит, если я не работаю (студент)?</h5>
+                        <div class="question__content">
+                          <p>В случае отсутствия источников дохода, кредит не выдается. Но вы можете оформить на ваших родителей или родных, кто имеет постоянные доходы.</p>
+                        </div>
+                      </li>
+                      <li class="question__item">
+                        <h5 class="question__link">А справка с ЧП подойдет для получения товара в кредит?</h5>
+                        <div class="question__content">
+                          <p>К каждому клиенту индивидуальный подход.</p>
+                        </div>
+                      </li>
+                    </ul><a class="question__show" href="#">Показать больше</a>
+                  </div>
+                  <h6 class="content__title content__title_green">Выгодность кредита от ФИНКА Банка:</h6>
+                  <ul class="bank_page__list">
+                    <li class="bank_page__items">БЕЗ первоначального взноса</li>
+                    <li class="bank_page__items">Оформление кредита за 1 день</li>
+                    <li class="bank_page__items">Досрочное погашение кредита в любой момент</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="content__item content__item_two">
+              <div class="content__description">
+                <h6 class="content__title content__title_green">Условия кредита от ФИНКА Банка:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__items">От 31% годовых*</li>
+                  <li class="bank_page__items">Без Первоначального взноса</li>
+                </ul>
+                <h6 class="content__title content__title_green">Требования к заемщику от ФИНКА Банка:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__items">Возраст - 18-65 лет</li>
+                  <li class="bank_page__items">Наличие постоянного подтверждаемого дохода</li>
+                </ul>
+                <h6 class="content__title content__title_green">Список необходимых документов для оформления кредита в ФИНКА Банке:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__items">Паспорт;</li>
+                  <li class="bank_page__items">Необходимо предоставить документ, подтверждающий доходы (справка о з/п, справка о пенсии по возрасту, банковская выписка о доходах в виде ден.переводов – только в качстве дополнительного источника).</li>
+                </ul>
+                <table class="bank__table">
+                  <thead>
+                    <td class="green__data" colspan="2">Условия кредитования ФИНКА Банка</td>
+                  </thead>
+                  <tr>
+                    <td class="green__data">Клиент</td>
+                    <td>Физические лица со стабильными источниками доходов в виде зар. платы, пенсии, банковская выписка о доходах.</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Возраст Клиента</td>
+                    <td>От 18 лет и старше</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Валюта кредита</td>
+                    <td>Кыргызский сом</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Сумма кредита</td>
+                    <td>От 10 000 до 250 000 сомов</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Срок кредита</td>
+                    <td>до 18 месяцев</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Погашение кредита</td>
+                    <td>Ежемесячно, аннуитетные платежи, которая включает основную сумму кредита и начисленные проценты</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Залоговое обеспечение</td>
+                    <td>Приобретаемый в кредит товар</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Процентная ставка	</td>
+                    <td>
+                      <ul class="table__list">
+                        <li>-31%* годовых</li>
+                        <li>(Годовая % ставка и доп. сбор указаны без учета НсП)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Комиссия за предоставление кредита</td>
+                    <td>Дополнительный сбор 2,3% (при получении кредита)</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Срок рассмотрения заявки кредита</td>
+                    <td>В течение одного дня</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Первоначальный взнос</td>
+                    <td>-Без первоначального взноса</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Обязательное условие</td>
+                    <td>Приобретаемый в кредит товар</td>
+                  </tr>
+                  <tr>
+                    <td class="green__data">Поручительство</td>
+                    <td>Не требуется</td>
+                  </tr>
+                </table>
+                <div class="desc">
+                  <p>*Годовая % ставка и доп. сбор указаны без учета НсП. Дополнительный сбор 2,3% (при получении кредита).       </p>
+                </div>
+                <h6 class="content__title content__title_green">3 шага для получения товара в кредит в ФИНКА Банке с онлайн-заявкой:</h6>
+                <ol class="ordered_light__list">
+                  <li class="ordered_light__item">Выбрать товар на сайте svetofor.info и нажать на кнопку «Купить в кредит», выбрать ЗАО «ФИНКА Банк», заполнить и отправить онлайн-заявку</li>
+                  <li class="ordered_light__item">В случае получения положительного предварительного ответа от Банка, менеджер по продажам магазина Svetofor высылает Вам счет на оплату и Вы с документами отправляетесь в ЗАО «ФИНКА Банк»</li>
+                  <li class="ordered_light__item">Подписать договора в филиале ЗАО «ФИНКА Банк»</li>
+                </ol>
+                <div class="desc">
+                  <p>Получить в Банке чек об оплате и забрать свою покупку в магазине или заказать товар на доставку в любое удобное для Вас время и место по телефонам (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33.</p>
+                </div>
+                <h6 class="content__title content__title_green">Шаги для получения товара в кредит в ФИНКА Банке без онлайн заявки:</h6>
+                <ol class="ordered_light__list">
+                  <li class="ordered_light__item">Выбрать товар в пункте выдачи заказов Svetofor по адресу: ТЦ Берен Голд 3 этаж, офис 303, 301 (Режим работы: 09.00-19.00 без перерыва) и получить счет на оплату у Консультанта</li>
+                  <li class="ordered_light__item">Принести в Банк все необходимые документы и дождаться рассмотрение заявки Банком</li>
+                  <li class="ordered_light__item">В случае положительного решения кредитного комитета, обратиться в пункт выдачи заказов за товаром</li>
+                  <li class="ordered_light__item">Оформить электронную заявку на потребительский кредит можно прямо на сайте svetofor.info на странице товара</li>
+                </ol>
+                <div class="desc">
+                  <p>*В зависимости от индивидуального случая и Вашей кредитной истории, банк может запрашивать дополнительные документы, такие как:
+                    <ul class="bank_page__list">
+                      <li class="bank_page__item_light">Свидетельство о браке</li>
+                      <li class="bank_page__item_light">Свидетельство о рождении детей</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="content__item content__item_three">
+              <div class="content__description">
+                <h6 class="content__title content__title_green">По вопросам, связанным с потребительским кредитованием обращайтесь:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__item_light">Call-центр интернет-маркетплейса Svetofor: (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33</li>
+                  <li class="bank_page__item_light">Call-центр Банка: 0 (312) 68 00 00, Whats App 0770 551100 или по телефону: +996 706 992-082 Акылай: 4400 колл-центр</li>
+                </ul><a href="https://www.fincabank.kg/en/branch-locations" target="_blank">Адреса всех филиалов FINCA Bank</a>
+              </div>
+            </li>
+            <li class="content__item content__item_four">
+              <ul class="comment_block__list">
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Вячеслав</h4>
+                  <div class="comment__text">
+                    <p>Хороший магазин</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">1 апреля 1997</span>
+                </li>
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Вячеслав Иванович</h4>
+                  <div class="comment__text">
+                    <p>Быстро одобрили рассрочку, отличный персонал</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">2 апреля 1997</span>
+                </li>
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Антон Сергеевич</h4>
+                  <div class="comment__text">
+                    <p>В нашем ассортименте более 500 продуктов. С 1919 года мы не отступаем от своих обещаний и дарим Вам здоровье и прекрасное самочувствие.</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">3 апреля 1997</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html></body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title bank page
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    link(rel="stylesheet" href="css/style.css")
+  body
+    .popup__full_cover
+      .popup__comment
+        h6.popup__title Оцените сервис обслуживания
+        a.popup__close(href="#")
+        form.popup__form
+          textarea.popup__textarea(placeholder="Напишите ваш комментарий здесь")
+          .form__bottom
+            .block__rate
+              h6.popup__title Поставьте оценку банку
+              .rating__block
+                input(name="rating" value="5" id="rating__5" type="radio")
+                label(for="rating__5" class="label__rating" title="Отлично")
+
+                input(name="rating" value="4" id="rating__4" type="radio")
+                label(for="rating__4" class="label__rating" title="Хорошо")
+                
+                input(name="rating" value="3" id="rating__3" type="radio")
+                label(for="rating__3" class="label__rating" title="Нормально")
+
+                input(name="rating" value="2" id="rating__2" type="radio")
+                label(for="rating__2" class="label__rating" title="Не очень")
+
+                input(name="rating" value="1" id="rating__1" type="radio")
+                label(for="rating__1" class="label__rating" title="Плохо")          
+            input.popup__submit(type="submit")   
+    .container-fluid
+      .wrapper
+        aside.left__panel
+          .bank__block
+            .bank__logo
+              block bank__image
+                img(src='images/KCB.png' alt='Комерческий Банк Кыргызстан')
+            .bank__rate
+              ul.rate__list
+                li.rate__item
+                  svg.rate__star.rate__star_full(width='25' height='24' viewbox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z' fill='white')
+                    path(d='M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z' stroke='black' stroke-opacity='0.2')
+                li.rate__item
+                  svg.rate__star.rate__star_full(width='25' height='24' viewbox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z' fill='white')
+                    path(d='M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z' stroke='black' stroke-opacity='0.2')
+                li.rate__item
+                  svg.rate__star.rate__star_full(width='25' height='24' viewbox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z' fill='white')
+                    path(d='M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z' stroke='black' stroke-opacity='0.2')
+                li.rate__item
+                  svg.rate__star.rate__star_empty(width='25' height='24' viewbox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z' fill='white')
+                    path(d='M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z' stroke='black' stroke-opacity='0.2')
+                li.rate__item
+                  svg.rate__star.rate__star_empty(width='25' height='24' viewbox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z' fill='white')
+                    path(d='M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z' stroke='black' stroke-opacity='0.2')
+            .text__review.assessment
+              span 25 оценок
+            .text__review.review
+              span 133 отзыва
+            button.review__button Написать отзыв
+          .bank__options
+            ul.bank__list
+              li.bank__item.active
+                a.bank__link(href='one') О банке
+              li.bank__item
+                a.bank__link(href='two') Условия
+              li.bank__item
+                a.bank__link(href='three') Контакты
+              li.bank__item
+                a.bank__link(href='four') Все отзывы
+        main.main__content
+          .content__header            
+            h3.content__title.content__title_first Товары в рассрочку без переплат и процентов
+            block bank__title
+              h2.content__title.content__title_red-bank от банка КЫРГЫЗСТАН
+            p Бытовая техника, телефоны, электроника, товары для дома и офиса В РАССРОЧКУ на сумму от 5 000 до 150 000 сом в интернет-маркетплейсе «Svetofor»
+          ul.content__section
+            li.content__item.content__item_one.active
+              .content__description
+                block content__first
+                  h6.content__title.content__title_green
+                    | Покупайте любые товары в кредит! Неограниченный Shopping в Интернет-маркетплейсе Svetofor с потребительским кредитованием от Банка КЫРГЫЗСТАН
+                  .desc
+                    p
+                      | Интернет-маркетплейс Svetofor предлагает всем покупателям не откладывать покупки в дальний ящик, если у Вас недостаточно средств для покупки, Вы можете купить в кредит. Получить кредит в Бишкеке и в КЫРГЫЗСТАНе в целом становится все проще - выбирайте любые товары, предлагаемые Интернет-маркетплейсом на сумму от 5 000 до 100 000 сомов и оплачивайте товары в течение периода от 3 до 24 месяцев. Взять в кредит может каждый от 18 до 65 лет (до 21 года требуется поручительство одного из родителей).
+                  h6.content__title.content__title_green Выгодность кредита от Банка КЫРГЫЗСТАН:
+                  ul.bank_page__list
+                    li.bank_page__items Досрочное погашение кредита в любой момент
+                    li.bank_page__items Оформление кредита за 1 час*
+                    li.bank_page__items Дополнительные бонусы и скидки по процентам при выполнении условий
+            li.content__item.content__item_two
+              .content__description
+                block content__second
+                  h6.content__title.content__title_green Условия получения кредита от Банка КЫРГЫЗСТАН:
+                  ul.bank_page__list
+                    li.bank_page__item От 24% годовых*
+                    li.bank_page__item Без Первоначального взноса**
+                  .desc
+                    p *Для клиентов-участников зарплатных проектов Банка КЫРГЫЗСТАН. Принятие решения о кредитовании граждан, не являющихся клиентами Банка, может занять более длительное время.
+                    p **Кредиты до 100 000 сом от 24% годовых. Для стимулирования клиентов базовый размер процентной ставки может уменьшаться. При этом максимальный размер скидки не может превышать 5 (Пять)% годовых.
+                  h6.content__title.content__title_green Предусматривается следующая гибкая система процентных скидок:
+                  ol.ordered_bank__list
+                    li.ordered_bank__item При наличии для всех клиентов первого Морального поручителя:
+                      ul.bank_page__list
+                        li.bank_page__item_light -3% пункта, в случае если клиент женат(замужем) и супруг(а) подписывает договор поручительства
+                    li.ordered_bank__item При наличии для всех клиентов первого, для пенсионеров второго Финансового поручителя (не супруг(а/и)):
+                      ul.bank_page__list
+                        li.bank_page__item_light Если клиент имеет поручителя с этой же организации -3% пункта.
+                        li.bank_page__item_light Если клиент имеет поручителя с доходом, покрывающим взнос по кредиту не менее 50% (обязательна справка с места работы): -2% пункта.    
+                    li.ordered_bank__item Если предоставляется несколько поручителей, то скидки за каждого поручителя суммируются.
+                    li.ordered_bank__item При наличии первоначального взноса за товар(ы):
+                      ul.bank_page__list
+                        li.bank_page__item_light -2%, если взнос составляет от 50% до 75%
+                        li.bank_page__item_light -3%, если взнос составляет свыше 75%
+                  h6.content__title.content__title_green Необходимые документы для оформления кредита от Банка КЫРГЫЗСТАН:
+                  ul.clear__list
+                    li.clear__item Для клиентов-участников зарплатного проекта
+                      ol.ordered_light__list
+                        li.ordered_light__item Паспорт заемщика
+                    li.clear__item Для граждан, не являющихся клиентами-участниками зарплатного проекта
+                      ol.ordered_light__list
+                        li.ordered_light__item Паспорт заемщика
+                        li.ordered_light__item Паспорт супруги/поручителей /свидетельство о браке
+                        li.ordered_light__item Справка о з/п заемщика за последние 3-6 мес.
+                        li.ordered_light__item Справка из Соц. Фонда (по требованию Банка)
+                        li.ordered_light__item Справка с места жительства, если прописка и место жительства будут отличаться
+                  h6.content__title.content__title_green Шаги для получения товара в кредит с онлайн-заявкой от Банка КЫРГЫЗСТАН:
+                  ol.ordered_light__list
+                    li.ordered_light__item Выбрать товар на сайте svetofor.info
+                    li.ordered_light__item        На карточке выбранного товара нажать на кнопку «Купить в кредит», выбрать Банк КЫРГЫЗСТАН, заполнить и отправить онлайн-заявку
+                    li.ordered_light__item Дождаться ответа от Банка о решении предоставления Вам кредита (обычно это занимает от 10 минут до 2 часов)
+                    li.ordered_light__item В случае получения положительного ответа от Банка, позвонить по номеру и забронировать выбранный товар
+                    li.ordered_light__item
+                      | Подписать требуемые договора в филиале Банка КЫРГЫЗСТАН
+                    li.ordered_light__item
+                      | Внести первоначальный взнос за приобретаемую технику в кассу Банка
+                    li.ordered_light__item
+                      | Получить в Банке чек об оплате и забрать свою покупку в пункте выдачи заказов или заказать товар на доставку в любое удобное для Вас время и место по телефонам (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33
+                  h6.content__title.content__title_green Шаги для получения товара в кредит с онлайн-заявкой от Банка КЫРГЫЗСТАН:
+                  ol.ordered_light__list
+                    li.ordered_light__item
+                      | Обратиться в пункт выдачи заказов Svetofor по адресу: ТЦ Берен Голд 3 этаж, офис 303, 301 (Режим работы: 09.00-19.00 без перерыва) и получить чек на оплату
+                    li.ordered_light__item
+                      | Собрать все необходимые документы и отправиться в Банк КЫРГЫЗСТАН
+                    li.ordered_light__item
+                      | Дождаться ответа от Банка о решении предоставления Вам кредита (обычно это занимает от 10 минут до 2 часов)
+                    li.ordered_light__item
+                      | В случае положительного ответа от Банка, подписать требуемые договора в филиале Банка КЫРГЫЗСТАН
+                    li.ordered_light__item
+                      | Внести первоначальный взнос за приобретаемую технику в кассу Банка КЫРГЫЗСТАН
+                    li.ordered_light__item
+                      | Получить в Банке чек об оплате и забрать свою покупку в пункте выдачи заказов или заказать товар на доставку в любое удобное для Вас время и место по телефонам (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33
+            li.content__item.content__item_three
+              .content__description
+                block content__third
+                  h6.content__title.content__title_green По всем вопросам Вы можете обратиться по телефонам:
+                  ul.bank_page__list
+                    li.bank_page__item Call-центр Банка КЫРГЫЗСТАН: (312) 61-33-33
+                    li.bank_page__item
+                      | Call-центр маркетплейса «Svetofor»: (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33
+                  .desc.desc__contacts
+                    p
+                      | По вопросам связанным с потребительским кредитованием обращайтесь: 
+                      a(href='http://online.credit@cbk.kg' target='_blank') online.credit@cbk.kg 
+                      |или по т. (312) 61-53-6
+                      p
+                        b Адрес Банка КЫРГЫЗСТАН:
+                        |Центральный офис в г. Бишкек: 720033, ул. Тоголок Молдо, 54а
+                    p
+                      b Офис в г. Ош:
+                      | ул. Курманжан Датка, 119
+                    a(href='https://www.cbk.kg/ru/branches' target='_blank') Адреса всех филиалов Банка КЫРГЫЗСТАН
+            li.content__item.content__item_four
+              ul.comment_block__list
+                li.comment_block__item
+                  h4.comment__title Вячеслав
+                  .comment__text
+                    p Хороший магазин
+                  ul.comment_rate__list
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_empty
+                    li.comment_rate__item.comment_rate__item_empty
+                  span.comment__date 1 апреля 1997
+                li.comment_block__item
+                  h4.comment__title Вячеслав Иванович
+                  .comment__text
+                    p Быстро одобрили рассрочку, отличный персонал
+                  ul.comment_rate__list
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_empty
+                    li.comment_rate__item.comment_rate__item_empty
+                    li.comment_rate__item.comment_rate__item_empty
+                  span.comment__date 2 апреля 1997
+                li.comment_block__item
+                  h4.comment__title Антон Сергеевич
+                  .comment__text
+                    p
+                      |В нашем ассортименте более 500 продуктов. С 1919 года мы не отступаем от своих обещаний и дарим Вам здоровье и прекрасное самочувствие.
+                  ul.comment_rate__list
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_full
+                    li.comment_rate__item.comment_rate__item_empty
+                  span.comment__date 3 апреля 1997
+        
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="scripts.js")
+</body>
+</html>

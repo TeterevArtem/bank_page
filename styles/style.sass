@@ -1,32 +1,53 @@
+//colors
+$red: #E31E24
+$green: #009846
+$yellow: #FECC00
+html, body
+  width: 100%
+  height: 100%
+
+.list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.bank__page
+  position: relative
+
 .wrapper
-    display: flex
-    justify-content: space-between
-    margin-top: 100px
+  display: flex
+  min-height: 100%
+  overflow: hidden
+  padding-top: 100px
+  font-family: 'Segoe UI'
+  transition: all .5s
+.blur
+  filter: blur(2px)
+
 
 .bank__block
-    width: 278px
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
-    border-radius: 5px
-    padding: 40px 40px 15px 40px
+  width: 278px
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  padding: 40px 40px 15px 40px
 
 .rate__list
-    list-style: none
-    margin: 11px 0
-    padding: 0
-    display: flex
-    align-items: center
+  list-style: none
+  margin: 11px 0
+  padding: 0
+  display: flex
+  align-items: center
 
 .bank__list
-    list-style: none
-    margin: 0
-    padding: 0
+  @extend .list
+    
 
 .bank__link
   color: #434343
   font-weight: 600  
 
 .rate__star_full
-  fill: #FECC00
+  fill: $yellow
 
 .text__review
   color: #8D8D8D
@@ -42,6 +63,9 @@
   margin: 13px auto 0
   font-size: 14px
   font-weight: 600
+  transition: all .5s
+  &:hover
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5)
 
 .bank__options
   margin-top: 75px
@@ -49,51 +73,81 @@
 
 .bank__item
   margin-top: 14px
+
 .bank__item.active
   .bank__link
     color: #009846
 
+.main__content
+  margin-left: 40px
+  width: 100%
+  max-width: 1000px
+  margin-top: 20px
+
 .content__title_first
   font-size: 32px
-  max-width: 573px
+  max-width: 400px
   margin-bottom: 45px
 
-.content__header 
+.content__header
+  position: relative
   p
     max-width: 485px
     font-weight: 600
+    line-height: 21px
   &:before
     content: ''
     position: absolute
-    right: 14%
-    top: 10%
+    right: 15%
+    top: -5%
     width: 315px
     height: 250px
     background: url('../images/hand_money.svg') center center no-repeat
 
-.content__section
-  margin-left: 100px
-
-.content__description
-  margin-top: 115px
+.content__section  
+  list-style: none
+  padding: 0
+  margin-top: 70px
 
 .content__title_red
-  color: #E31E24
+  color: $red
   font-size: 18px
   font-weight: 600
   width: 100%
   max-width: none
 
-.desc p
+.content__title_red-bank
+  font-size: 32px
+  color: $red
+
+.content__title_green
+  color: $green
   font-weight: 600
+  font-size: 24px
+  line-height: 32px
+  max-width: 1000px
+  margin-bottom: 15px
+
+.desc p
   line-height: 24px
   font-size: 18px
+  margin-top: 20px
 
-.content__brands
-  max-width: 310px
+.bank_page__list
+  list-style: disc
   font-weight: 600
   font-size: 18px
-  margin-left: 30px
+  line-height: 24px
+  margin-bottom: 10px
+
+.ordered_bank__list
+  font-weight: 600
+  font-size: 18px
+  line-height: 24px
+
+.bank_page__item_light
+  font-weight: 400
+  margin: 10px 0
 
 .content__title_second
   font-size: 24px
@@ -139,10 +193,239 @@
 .content__title_small
   margin-left: 20px
 
+.clear__list
+  @extend .list
+  font-weight: 600
+  font-size: 18px
 
+.clear__item
+  margin: 10px
+  &:first-child
+    margin-top: 0
+
+.ordered_light__list
+  font-weight: 400
+  margin: 10px
+  font-size: 18px
+
+.desc__contacts
+  p
+    font-weight: 400
+    font-size: 16px
+
+.comment_block__list
+  @extend .list  
+
+.comment_block__item
+  margin: 20px 0
+  border: 1px solid #ccc
+  padding: 10px
+  border-radius: 5px
+
+.comment__date
+  color: #999999
+  font-size: 14px
+  display: block
+  text-align: right
+
+.comment_rate__list
+  @extend .list
+  display: flex
+
+.comment_rate__item
+  width: 15px
+  height: 15px
+  background-size: contain
+  &_full
+    background: url(../images/full_star.svg) center center no-repeat    
+  &_empty
+    background: url(../images/empty_star.svg) center center no-repeat
 
 .content__item
   display: none
+
 .content__item.active
   display: block
+
+.red__text
+  color: $red
+
+.throught__text
+  text-decoration: line-through
+
+.m-top
+  margin-top: 20px
+
+.bank__table
+  font-size: 13px
+  width: 100%
+  text-align: center
+  td
+    border: 1px solid $yellow
+    padding: 15px 30px
+  .green__data
+    background: $green
+    color: #fff
+    min-width: 200px
+  &_other
+    td
+      padding: 15px 0
+      &:nth-child(2)
+        max-width: 415px
+
+.table__list
+  @extend .list
+  text-align: center
+
+.table__list_ordered
+  padding-left: 20px
+  text-align: left
+
+.green__text
+  color: $green
+
+.contact__block
+  span
+    display: block
+
+.bank_page__list_contacts
+  list-style: none
+  margin: 0
+  padding: 0
+
+.disc__list
+  list-style: disc
+  
+.text__light
+  font-weight: normal
+
+.question__list
+  @extend .list
+  position: relative
+
+.question__list.hidden
+  &:after,&:before
+    content: ''
+    position: absolute
+    height: 100px
+    width: 100%
+    left: 0
+  &:before
+    bottom: 100px
+    z-index: 2
+    filter: blur(1px)
+    background: rgba(255,255,255,.5)       
+  &:after
+    bottom: 0
+    z-index: 2
+    filter: blur(2px)
+    background: rgba(255,255,255,.8)
+  
+
+
+.question__item
+  border: 1px solid #cccccc
+  border-radius: 5px
+  padding: 5px 10px
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 0
+
+.hidden
+  max-height: 320px
+  overflow: hidden
+
+
+
+.popup__full_cover
+  position: fixed
+  width: 100vw
+  height: 100vh
+  min-height: 150vh
+  background: rgba(0,0,0,.5)
+  display: none
+  z-index: 100
+
+
+.popup__comment
+  width: 750px
+  height: 300px
+  border-radius: 10px
+  background: #fff
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 10
+  padding: 20px 25px
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5)
+
+.popup__title
+  font-size: 18px
+  color: #333333
+
+.popup__close
+  position: absolute
+  top: 20px
+  right: 25px
+  display: block
+  width: 20px
+  height: 20px
+  background: url(../images/popup_close.svg) center center no-repeat
+
+.popup__textarea
+  resize: none
+  width: 700px
+  height: 130px
+  border-radius: 5px
+  border: 1px solid #ccc
+  padding: 5px 10px
+
+.form__bottom
+  display: flex
+  justify-content: space-between
+  margin-top: 20px
+
+.popup__rate_list
+  margin-left: 20px
+  margin-top: 20px
+
+.popup__submit
+  background: $green
+  border-radius: 5px
+  color: #ffffff
+  border: none
+  outline: none
+  padding: 10px 25px
+  margin-left: 7px
+  align-self: center
+  transition: .5s
+  &:hover
+    box-shadow: 0 2px 3px rgba(0,0,0,.5)
+
+//rate vidget
+.rating__block 
+  display: flex
+  flex-direction: row-reverse
+  width: 125px
+  height: 25px
+
+.rating__block input[type="radio"] 
+  display: none
+
+.label__rating 
+  display: block
+  width: 25px
+  height: 25px
+  background: url('../images/svg/sprite.svg') no-repeat 50% 0
+  background-size: cover
+  cursor: pointer
+
+
+.rating__block .label__rating:hover,
+.rating__block .label__rating:hover ~ .label__rating,
+.rating__block input[type="radio"]:checked ~ .label__rating 
+  background-position: 50% -22px
+
+
 

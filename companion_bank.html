@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>bank page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="popup__full_cover">
+      <div class="popup__comment">
+        <h6 class="popup__title">Оцените сервис обслуживания</h6><a class="popup__close" href="#"></a>
+        <form class="popup__form">
+          <textarea class="popup__textarea" placeholder="Напишите ваш комментарий здесь"></textarea>
+          <div class="form__bottom">
+            <div class="block__rate">
+              <h6 class="popup__title">Поставьте оценку банку</h6>
+              <div class="rating__block">
+                <input name="rating" value="5" id="rating__5" type="radio"/>
+                <label class="label__rating" for="rating__5" title="Отлично"></label>
+                <input name="rating" value="4" id="rating__4" type="radio"/>
+                <label class="label__rating" for="rating__4" title="Хорошо"></label>
+                <input name="rating" value="3" id="rating__3" type="radio"/>
+                <label class="label__rating" for="rating__3" title="Нормально"></label>
+                <input name="rating" value="2" id="rating__2" type="radio"/>
+                <label class="label__rating" for="rating__2" title="Не очень"></label>
+                <input name="rating" value="1" id="rating__1" type="radio"/>
+                <label class="label__rating" for="rating__1" title="Плохо">         </label>
+              </div>
+            </div>
+            <input class="popup__submit" type="submit"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <aside class="left__panel">
+          <div class="bank__block">
+            <div class="bank__logo"><img src="images/companion.png" alt="Банк Компаньон"/>
+            </div>
+            <div class="bank__rate">
+              <ul class="rate__list">
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_full" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_empty" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+                <li class="rate__item">
+                  <svg class="rate__star rate__star_empty" width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4629 18.7924L19.8259 23.2328L17.8779 14.8583L24.3772 9.22641L15.8096 8.49128L12.4629 0.595703L9.11617 8.49128L0.548584 9.22641L7.04785 14.8583L5.09984 23.2328L12.4629 18.7924Z" fill="white"></path>
+                    <path d="M12.7211 18.3643L12.4629 18.2085L12.2047 18.3643L5.85493 22.1936L7.53485 14.9716L7.60316 14.6779L7.37529 14.4804L1.77024 9.62343L9.15891 8.98945L9.45899 8.9637L9.57652 8.68641L12.4629 1.8769L15.3493 8.68641L15.4668 8.9637L15.7669 8.98945L23.1555 9.62343L17.5505 14.4804L17.3226 14.6779L17.3909 14.9716L19.0708 22.1936L12.7211 18.3643Z" stroke="black" stroke-opacity="0.2"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="text__review assessment"><span>25 оценок</span></div>
+            <div class="text__review review"><span>133 отзыва</span></div>
+            <button class="review__button">Написать отзыв</button>
+          </div>
+          <div class="bank__options">
+            <ul class="bank__list">
+              <li class="bank__item active"><a class="bank__link" href="one">О банке</a></li>
+              <li class="bank__item"><a class="bank__link" href="two">Условия</a></li>
+              <li class="bank__item"><a class="bank__link" href="three">Контакты</a></li>
+              <li class="bank__item"><a class="bank__link" href="four">Все отзывы</a></li>
+            </ul>
+          </div>
+        </aside>
+        <main class="main__content">
+          <div class="content__header">           
+            <h3 class="content__title content__title_first">Товары в рассрочку без переплат и процентов</h3>
+            <h2 class="content__title content__title_red-bank">от Банка Компаньон:</h2>
+            <p>Бытовая техника, телефоны, электроника, товары для дома и офиса В РАССРОЧКУ на сумму от 5 000 до 150 000 сом в интернет-маркетплейсе «Svetofor»</p>
+          </div>
+          <ul class="content__section">
+            <li class="content__item content__item_one active">
+              <div class="content__description">
+                <div class="content__description">
+                  <h6 class="content__title content__title_green">Покупайте любые товары в кредит! Неограниченный Shopping в Интернет-маркетплейсе Svetofor с потребительским кредитованием от Банка Компаньон</h6>
+                  <div class="desc">
+                    <p>Интернет-маркетплейс Svetofor предлагает всем покупателям не откладывать покупки в дальний ящик, если у Вас недостаточно средств для покупки, Вы можете купить в кредит. Получить кредит в Бишкеке и в Кыргызстане в целом становится все проще - выбирайте любые товары, предлагаемые Интернет-маркетплейсом на сумму до 150 000 сомов и оплачивайте товары в течение периода от 3 до 24 месяцев. Взять в кредит может каждый от 18 до 68 лет.</p>
+                  </div>
+                  <h6 class="content__title content__title_green">Целевые клиенты для получения кредита от Банка Компаньон</h6>
+                  <div class="desc">
+                    <p>Дееспособные физические лица/ИП без образования юридического лица, занимающиеся предпринимательской и/или иной деятельностью, направленной на развитие бизнеса и извлечения дохода</p>
+                  </div>
+                  <h6 class="content__title content__title_green">Целевое назначение кредита от Банка Компаньон</h6>
+                  <div class="desc">
+                    <p>Приобретение товаров длительного пользования:</p>
+                  </div>
+                  <ul class="bank_page__list">
+                    <li class="bank_page__items">Корпусная мебель, мягкая мебель; </li>
+                    <li class="bank_page__items">Персональный компьютер, ноутбук;</li>
+                    <li class="bank_page__items">Бытовая техника (за исключением мелкой бытовой техники);</li>
+                    <li class="bank_page__items">Сотовые телефоны и планшеты;</li>
+                    <li class="bank_page__items">Товары для спорта и активного отдыха (за исключением одежды).</li>
+                  </ul>
+                  <div class="desc">
+                    <p>Рекомендуется финансировать товары с гарантийным обслуживанием минимум 3 месяца.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="content__item content__item_two">
+              <div class="content__description">
+                <h6 class="content__title content__title_green">Условия кредита «Товар в кредит» от Банка Компаньон:</h6>
+                <div class="desc"> 
+                  <p>Номинальная годовая ставка 29,9%</p>
+                </div>
+                <ul class="bank_page__list">
+                  <li class="bank_page__items">Возраст заемщика: от 18 до 68 лет</li>
+                  <li class="bank_page__items">Срок кредитования: от 3 до 24 месяцев</li>
+                  <li class="bank_page__items">Сумма финансирования до 150 000 сомов</li>
+                  <li class="bank_page__items">Срок рассмотрения заявки – в течение одного дня!  </li>
+                </ul>
+                <h6 class="content__title content__title_green">Критерии к клиентам для кредита от Банка Компаньон</h6>
+                <ol class="ordered_light__list">
+                  <li class="ordered_light__item">Граждане КР в возрасте от 18 лет. Кредитование сотовых телефонов и планшетов возможно в возрасте от 21 года.</li>
+                  <li class="ordered_light__item">Срок окончания выплаты кредита должен быть ранее, чем клиент достигнет 68 лет.  Данное ограничение также распространяется на членов домохозяйства, чьи доходы учитываются в анализе.</li>
+                  <li class="ordered_light__item">Отсутствие активных кредитов у клиента в другом ФКУ.</li>
+                  <li class="ordered_light__item">Без истории или положительная кредитная история.</li>
+                  <li class="ordered_light__item">Если основной источник домохозяйства – доходы с бизнеса:
+                    <ul class="disc__list">
+                      <li>Бизнес клиента должен работать более 6 месяцев.</li>
+                      <li>Клиенты, занимающиеся сельским хозяйством, должны иметь более одного источника дохода</li>
+                    </ul>
+                  </li>
+                  <li class="ordered_light__item">Если основной источник дохода – заработная плата:
+                    <ul class="disc__list">
+                      <li>Клиент должен иметь минимум 6 месяцев трудового стажа.</li>
+                    </ul>
+                  </li>
+                </ol>
+                <table class="bank__table">
+                  <thead>
+                    <td class="green__data">Сумма кредита</td>
+                    <td class="green__data">Срок кредита</td>
+                    <td class="green__data">Поручитель</td>
+                  </thead>
+                  <tr>
+                    <td>до 100 000	</td>
+                    <td>от 3 до 24 мес.</td>
+                    <td>нет</td>
+                  </tr>
+                  <tr>
+                    <td>от 100 001 сом до 150 000 сом</td>
+                    <td>от 3 до 24 мес.</td>
+                    <td>минимум один с независимым доходом и/или супруг(-а)</td>
+                  </tr>
+                </table>
+                <h6 class="content__title content__title_green">Шаги для получения товара в кредит от Банка Компаньон с онлайн-заявкой:</h6>
+                <ol class="ordered_light__list">
+                  <li class="ordered_light__item">Выбрать товар на сайте svetofor.info</li>
+                  <li class="ordered_light__item">На карточке выбранного товара нажать на кнопку «Купить в кредит», выбрать Банк Компаньон, заполнить и отправить онлайн-заявку</li>
+                  <li class="ordered_light__item">Дождаться ответа от Банка о предварительном решении предоставления Вам кредита </li>
+                  <li class="ordered_light__item">В случае получения положительного ответа от Банка, Вам необходимо обратиться в пункт выдачи заказов Svetofor за счетом на оплату и с документами отправиться в Банк</li>
+                  <li class="ordered_light__item">Подписать требуемые договоры в филиале Банка Компаньон</li>
+                  <li class="ordered_light__item">Внести первоначальный взнос за приобретаемую технику в кассу Банка</li>
+                  <li class="ordered_light__item">Получить в Банке чек об оплате и забрать свою покупку в пункте выдачи заказов или заказать товар на доставку в любое удобное для Вас время и место по телефонам (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33       </li>
+                </ol>
+                <h6 class="content__title content__title_green">Шаги для получения товара в кредит от Банка Компаньон без онлайн-заявки:</h6>
+                <ol class="ordered_light__list">
+                  <li class="ordered_light__item">Собрать все необходимые документы</li>
+                  <li class="ordered_light__item">Обратиться в пункт выдачи заказов Svetofor по адресу: ТЦ Берен Голд 3 этаж, офис 303, 301 (Режим работы: 09.00-19.00 без перерыва) и получить чек на оплату</li>
+                  <li class="ordered_light__item">С полученным чеком и документами обратиться в филиал ЗАО «Банк Компаньон» по адресу г. Бишкек, ул.Уметалиева, 84 (Режим работы: Пн-Пт, 8:30-17:30 Касса: 9:00-16:30 Без перерыва Телефон: +996 (312) 986 543 - обеденный перерыв с 12-00 до 13-00)</li>
+                  <li class="ordered_light__item">Подать заявление на получение кредита и дождаться ответа от Банка о решении предоставления Вам кредита (обычно в течение одного рабочего дня)</li>
+                  <li class="ordered_light__item">Подписать требуемые договоры и документы на открытие счета.</li>
+                  <li class="ordered_light__item">Внести первоначальный взнос за приобретаемую технику в кассу Банка</li>
+                  <li class="ordered_light__item">Получить в Банке чек об оплате и забрать свою покупку в пункте выдачи заказов.</li>
+                </ol>
+                <div class="desc">
+                  <p>**В зависимости от индивидуального случая и Вашей кредитной истории, банк может запрашивать дополнительные документы, такие как:</p>
+                  <ul class="bank_page__list">
+                    <li class="bank_page__item_light">Свидетельство о браке</li>
+                    <li class="bank_page__item_light">Свидетельство о рождении детей</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="content__item content__item_three">
+              <div class="content__description">
+                <h6 class="content__title content__title_green">По всем вопросам Вы можете обратиться по телефонам:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__item">Call-центр интернет-маркетплейса «Svetofor»: (312) 97-69-97; (555) 93-88-33; (773) 93-88-33; (700) 93-88-33</li>
+                </ul>
+                <h6 class="content__title content__title_green">По вопросам связанным с потребительским кредитованием обращайтесь:</h6>
+                <ul class="bank_page__list">
+                  <li class="bank_page__item">(312) 33-88-00 - городской единый номер контакт центра ЗАО «Банк Компаньон»</li>
+                  <li class="bank_page__item">Короткий номер 8800 - звонок бесплатный для дозвона с мобильных телефонов.</li>
+                </ul>
+                <h6 class="content__title content__title_green">Адреса филиалов ЗАО «Банк Компаньон»:</h6>
+                <ul class="bank_page__list bank_page__list_contacts">
+                  <li class="bank_page__item_light">
+                    <h6>Головной офис в г. Бишкек:<span class="text__light"> ул. Шота Руставели, 62</span></h6>
+                  </li>
+                  <li class="bank_page__item_light">
+                    <h6>Телефон:<span class="text__light"> +996 (312) 33-88-00</span></h6>
+                  </li>
+                </ul>
+                <ul class="bank_page__list bank_page__list_contacts">
+                  <li class="bank_page__item_light">
+                    <h6>Офис в г. Ош:<span class="text__light"> г. Ош, ул. Масалиева, 73 </span></h6>
+                  </li>
+                  <li class="bank_page__item_light">
+                    <h6>Телефон:<span class="text__light"> +996 (3222) 5-67-03 </span></h6>
+                  </li>
+                  <li class="bank_page__item_light">
+                    <h6>График работы:<span class="text__light"> Пн-Пт, 8:30-17:30; Касса: 9:00-16:30</span></h6>
+                  </li>
+                  <li class="bank_page__item_light"><span class="text__light"> Без перерыва</span></li>
+                </ul><a href="https://www.kompanion.kg/ru/map/branch" target="_blank">Адреса всех филиалов ЗАО «Банк Компаньон»</a>
+              </div>
+            </li>
+            <li class="content__item content__item_four">
+              <ul class="comment_block__list">
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Вячеслав</h4>
+                  <div class="comment__text">
+                    <p>Хороший магазин</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">1 апреля 1997</span>
+                </li>
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Вячеслав Иванович</h4>
+                  <div class="comment__text">
+                    <p>Быстро одобрили рассрочку, отличный персонал</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">2 апреля 1997</span>
+                </li>
+                <li class="comment_block__item">
+                  <h4 class="comment__title">Антон Сергеевич</h4>
+                  <div class="comment__text">
+                    <p>В нашем ассортименте более 500 продуктов. С 1919 года мы не отступаем от своих обещаний и дарим Вам здоровье и прекрасное самочувствие.</p>
+                  </div>
+                  <ul class="comment_rate__list">
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_full"></li>
+                    <li class="comment_rate__item comment_rate__item_empty"></li>
+                  </ul><span class="comment__date">3 апреля 1997</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html></body>
+</html>
