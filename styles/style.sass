@@ -27,6 +27,7 @@ html, body
 
 .bank__block
   width: 278px
+  margin-left: 2px
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
   border-radius: 5px
   padding: 40px 40px 15px 40px
@@ -44,7 +45,9 @@ html, body
 
 .bank__link
   color: #434343
-  font-weight: 600  
+  font-weight: 600 
+  padding: 5px 10px
+  border-radius: 5px 
 
 .rate__star_full
   fill: $yellow
@@ -90,19 +93,14 @@ html, body
   margin-bottom: 45px
 
 .content__header
-  position: relative
+  display: flex
   p
     max-width: 485px
     font-weight: 600
     line-height: 21px
-  &:before
-    content: ''
-    position: absolute
-    right: 15%
-    top: -5%
-    width: 315px
-    height: 250px
-    background: url('../images/hand_money.svg') center center no-repeat
+
+.header__image
+  margin-left: 100px
 
 .content__section  
   list-style: none
@@ -348,8 +346,10 @@ html, body
 
 
 .popup__comment
-  width: 750px
-  height: 300px
+  width: 70%
+  min-width: 300px
+  max-width: 750px
+  min-height: 300px
   border-radius: 10px
   background: #fff
   position: fixed
@@ -375,7 +375,7 @@ html, body
 
 .popup__textarea
   resize: none
-  width: 700px
+  width: 100%
   height: 130px
   border-radius: 5px
   border: 1px solid #ccc
@@ -427,5 +427,54 @@ html, body
 .rating__block input[type="radio"]:checked ~ .label__rating 
   background-position: 50% -22px
 
+@media screen and(max-width: 1024px)
+  .content__header
+    flex-wrap: wrap
+  .header__image
+    margin-left: 0
+
+@media screen and(max-width: 768px)
+  .wrapper
+    flex-wrap: wrap
+    justify-content: center
+
+  .bank__block
+    text-align: center
+    width: 90vw
+    margin-left: 0   
+
+  .rate__list
+    justify-content: center
+
+  .bank__options
+    margin-left: 0
+    margin-top: 20px
+
+  .bank__list
+    display: flex
+    justify-content: space-between
+  
+  .bank__item.active .bank__link
+    background: $green
+    color: #fff
+    transition: .3s
+    text-decoration: none
+
+  .bank__link
+    font-size: 14px
+
+  .header__image
+    display: none
+  
+  .main__content
+    margin-left: 0
+
+  .content__title_first
+    margin-bottom: 20px
+
+  .content__section
+    margin-top: 30px
+    
+    
 
 
